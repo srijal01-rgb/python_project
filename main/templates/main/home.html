@@ -1,0 +1,13 @@
+{% extends 'base.html'%}
+
+{% block content %}
+<h1>home page</h1>
+
+<nav>
+    {%for room in rooms%}
+    <nav>
+       <h5>{{rooms.id}--{rooms.name}}</h5> 
+    </nav>
+    {% endfor %}
+</nav>
+{% endblock %}

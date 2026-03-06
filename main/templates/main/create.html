@@ -1,0 +1,17 @@
+
+
+{%block title%}Create New{% endblock %}
+
+{%block content%}
+<h2>Create Page</h2>
+
+<form method="post" action="/create/">
+    {% csrf_token %}
+    {{ form}}
+    <input type="name">
+    <button type="submit" name="save">
+        Create New
+    </button>
+</form>
+
+{%endblock%}
